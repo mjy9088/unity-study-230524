@@ -494,6 +494,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   display: {fileID: 861417663}
+  sampleDuration: 1
+  displayMode: 0
 --- !u!1 &943980972
 GameObject:
   m_ObjectHideFlags: 0
@@ -689,7 +691,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1836995179}
-  - component: {fileID: 1836995178}
+  - component: {fileID: 1836995180}
   m_Layer: 0
   m_Name: Graph
   m_TagString: Untagged
@@ -697,21 +699,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1836995178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1836995177}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d05d1fd8fb6c87448b1061929fc1938d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pointPrefab: {fileID: 1584447488750272390, guid: 78ba26aaaea111442b96ba18cb6c5796, type: 3}
-  resolution: 100
-  function: 1
 --- !u!4 &1836995179
 Transform:
   m_ObjectHideFlags: 0
@@ -727,6 +714,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1836995180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836995177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8245748b45254c24eb09971931aeb8c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 300
+  function: 0
+  functionDuration: 1
+  transitionDuration: 1
+  transitionMode: 0
+  computeShader: {fileID: 7200000, guid: 4f684121691a89543b51a12607a81245, type: 3}
+  material: {fileID: 2100000, guid: 61762777b00b40048bf9e1ec7348e414, type: 2}
+  mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1846685675
 GameObject:
   m_ObjectHideFlags: 0
